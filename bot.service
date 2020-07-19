@@ -1,0 +1,15 @@
+[Unit]
+Description=Telegram bot 'Town Wars'
+After=syslog.target
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/usr/local/bin/xxx/snusbott
+ExecStart=/usr/bin/python3 /usr/local/bin/xxx/snusbott/main.py
+RestartSec=10
+Restart=always
+ 
+[Install]
+WantedBy=multi-user.target
