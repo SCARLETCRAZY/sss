@@ -7,7 +7,7 @@ After=network.target
 Type=simple
 User=root
 WorkingDirectory=/usr/local/bin/xxx/snusbott
-ExecStart=/usr/bin/python3 /usr/local/bin/xxx/snusbott/main.py
+ExecStart=/usr/bin/python3.7 /usr/local/bin/xxx/snusbott/main.py
 RestartSec=10
 Restart=always
  
